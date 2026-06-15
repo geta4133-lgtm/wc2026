@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚽ FIFA World Cup 2026 - Jadwal & Live Streaming | @SuperBolaWC</title>
+<meta name="description" content="Jadwal lengkap Piala Dunia 2026, live streaming gratis, dan prediksi jitu. Gabung channel Telegram @SuperBolaWC sekarang!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#070b14;--bg2:#0d1424;--card:#111b2e;--card2:#162040;
+--gold:#f5a623;--red:#e53e3e;--green:#38a169;--blue:#3182ce;
+--telegram:#0088cc;--telegram-dark:#006699;
+--txt:#e2e8f0;--txt2:#94a3b8;--border:#1e2d4a;
+--grad1:linear-gradient(135deg,#f5a623,#e53e3e);
+--grad2:linear-gradient(135deg,#38a169,#3182ce);
+--tg-grad:linear-gradient(135deg,#0088cc,#00c6ff);
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 25% 50%,rgba(0,136,204,.06) 0%,transparent 50%),radial-gradient(circle at 75% 20%,rgba(245,166,35,.06) 0%,transparent 50%),radial-gradient(circle at 50% 80%,rgba(229,62,62,.04) 0%,transparent 50%);animation:bgF 25s ease-in-out infinite;z-index:-1}
+@keyframes bgF{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-20px)}}
+
+/* Floating Telegram Button */
+.tg-float{position:fixed;bottom:20px;right:20px;z-index:9999;background:var(--tg-grad);color:#fff;padding:14px 24px;border-radius:50px;font-weight:700;font-size:14px;text-decoration:none;display:flex;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(0,136,204,.4);transition:.3s;animation:floatB 3s ease-in-out infinite}
+.tg-float:hover{transform:scale(1.05);box-shadow:0 6px 25px rgba(0,136,204,.5)}
+@keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.tg-float svg{width:20px;height:20px;fill:white}
+
+/* Hero */
+.hero{text-align:center;padding:50px 20px 30px;position:relative}
+.hero::after{content:'';position:absolute;bottom:0;left:10%;right:10%;height:2px;background:var(--tg-grad);border-radius:2px}
+.hero .ball{font-size:70px;display:block;margin-bottom:12px;animation:bounce 2s infinite}
+@keyframes bounce{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(10deg)}}
+.hero h1{font-size:clamp(26px,5.5vw,44px);font-weight:900;background:var(--grad1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-1px}
+.hero .sub{color:var(--txt2);font-size:15px;margin-top:6px;font-weight:500}
+.hosts{display:flex;justify-content:center;gap:10px;margin-top:16px;flex-wrap:wrap}
+.host-badge{background:var(--card);border:1px solid var(--border);padding:7px 14px;border-radius:20px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:5px}
+
+/* Telegram CTA Banner */
+.tg-banner{background:var(--tg-grad);border-radius:16px;padding:24px;margin:20px auto;max-width:600px;text-align:center;position:relative;overflow:hidden}
+.tg-banner::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,.1) 0%,transparent 60%);animation:shimmer 3s infinite}
+@keyframes shimmer{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.tg-banner h2{font-size:22px;font-weight:800;margin-bottom:6px;position:relative}
+.tg-banner p{font-size:14px;opacity:.9;margin-bottom:16px;position:relative}
+.tg-banner .tg-features{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:18px;position:relative}
+.tg-banner .tg-feat{font-size:12px;display:flex;align-items:center;gap:4px}
+.tg-btn{display:inline-flex;align-items:center;gap:8px;background:#fff;color:#0088cc;font-weight:800;font-size:16px;padding:14px 32px;border-radius:14px;text-decoration:none;transition:.3s;position:relative;box-shadow:0 4px 15px rgba(0,0,0,.2)}
+.tg-btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.3)}
+.tg-btn svg{width:22px;height:22px;fill:#0088cc}
+.tg-member-count{font-size:12px;opacity:.8;margin-top:10px;position:relative}
+
+/* Stats */
+.stats{display:flex;justify-content:center;gap:28px;padding:22px 20px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-n{font-size:26px;font-weight:800;color:var(--gold)}
+.stat-l{font-size:11px;color:var(--txt2);text-transform:uppercase;letter-spacing:1px}
+
+/* Countdown */
+.countdown{display:flex;justify-content:center;gap:12px;margin:18px 0;flex-wrap:wrap}
+.cd-item{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 18px;min-width:65px;text-align:center}
+.cd-n{font-size:26px;font-weight:800;color:var(--gold)}
+.cd-l{font-size:10px;color:var(--txt2);text-transform:uppercase;letter-spacing:1px}
+
+/* Nav */
+.nav{display:flex;justify-content:center;gap:6px;padding:0 16px 20px;flex-wrap:wrap}
+.nav-tab{padding:10px 18px;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--txt2);font-weight:600;font-size:13px;cursor:pointer;transition:.3s}
+.nav-tab:hover,.nav-tab.active{background:var(--gold);color:#000;border-color:var(--gold);transform:translateY(-2px);box-shadow:0 4px 14px rgba(245,166,35,.3)}
+
+/* Container */
+.container{max-width:780px;margin:0 auto;padding:0 14px 60px}
+.section{display:none}.section.active{display:block}
+
+/* Search */
+.search{width:100%;padding:13px 18px;background:var(--card);border:1px solid var(--border);border-radius:14px;color:var(--txt);font-size:14px;font-weight:500;outline:none;margin-bottom:14px;transition:.3s}
+.search:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(245,166,35,.1)}
+.search::placeholder{color:var(--txt2)}
+
+/* Filter */
+.filter{display:flex;gap:6px;padding:14px 0;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.filter::-webkit-scrollbar{display:none}
+.f-btn{padding:8px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--txt2);font-weight:600;font-size:12px;cursor:pointer;white-space:nowrap;transition:.3s}
+.f-btn:hover,.f-btn.active{background:var(--gold);color:#000;border-color:var(--gold)}
+
+/* Phase Header */
+.phase-header{text-align:center;padding:28px 0 14px}
+.phase-header h2{font-size:22px;font-weight:800;background:var(--grad2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* Date Header */
+.date-header{display:flex;justify-content:space-between;align-items:center;padding:14px 0 8px;border-bottom:1px solid var(--border);margin-bottom:10px}
+.date-text{font-weight:700;font-size:14px;color:var(--gold)}
+.match-count{font-size:11px;color:var(--txt2);background:var(--card);padding:4px 10px;border-radius:8px}
+
+/* Match Card */
+.match-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 18px;margin-bottom:10px;transition:.3s;position:relative;overflow:hidden}
+.match-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--tg-grad);border-radius:4px 0 0 4px}
+.match-card:hover{background:var(--card2);border-color:rgba(0,136,204,.3);transform:translateX(4px)}
+.match-time{font-size:12px;font-weight:700;color:var(--gold);margin-bottom:8px}
+.match-teams{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:6px}
+.team{display:flex;align-items:center;gap:6px;flex:1}
+.team.home{justify-content:flex-end;text-align:right}
+.team.away{justify-content:flex-start}
+.flag{font-size:22px}
+.team-name{font-weight:700;font-size:13px}
+.vs{font-weight:900;font-size:11px;color:var(--txt2);background:rgba(255,255,255,.04);width:34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:50%;flex-shrink:0}
+.match-venue{font-size:11px;color:var(--txt2);text-align:center;margin-bottom:8px}
+.match-tg-link{text-align:center}
+.match-tg-link a{font-size:11px;color:var(--telegram);text-decoration:none;font-weight:600}
+.match-tg-link a:hover{text-decoration:underline}
+
+/* Streaming Grid */
+.s-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-bottom:28px}
+.s-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;transition:.3s;position:relative;overflow:hidden}
+.s-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--tg-grad)}
+.s-card:hover{transform:translateY(-3px);border-color:var(--telegram);box-shadow:0 6px 24px rgba(0,136,204,.12)}
+.badge{display:inline-block;padding:3px 9px;border-radius:7px;font-size:10px;font-weight:700;text-transform:uppercase;margin-bottom:10px}
+.badge.free{background:rgba(56,161,105,.2);color:var(--green)}
+.badge.premium{background:rgba(245,166,35,.2);color:var(--gold)}
+.badge.indo{background:rgba(49,130,206,.2);color:var(--blue)}
+.badge.live{background:rgba(229,62,62,.2);color:var(--red)}
+.s-card h3{font-size:16px;font-weight:700;margin-bottom:6px}
+.s-card p{font-size:12px;color:var(--txt2);line-height:1.6;margin-bottom:14px}
+.s-link{display:inline-flex;align-items:center;gap:5px;padding:9px 18px;background:var(--tg-grad);color:#fff;font-weight:700;font-size:12px;border-radius:10px;text-decoration:none;transition:.3s}
+.s-link:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(0,136,204,.4)}
+.s-link-gold{background:var(--grad1);color:#000}
+.s-link-gold:hover{box-shadow:0 4px 14px rgba(245,166,35,.4)}
+
+/* Info Card */
+.info-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;margin-bottom:14px}
+.info-card h3{color:var(--gold);margin-bottom:8px;font-size:15px}
+.info-card p{font-size:13px;color:var(--txt2);line-height:1.7}
+.info-card ul{margin-top:6px;padding-left:14px}
+.info-card li{font-size:13px;color:var(--txt2);line-height:1.8}
+
+.tips-card{background:linear-gradient(135deg,rgba(0,136,204,.08),rgba(0,198,255,.04));border:1px solid rgba(0,136,204,.2);border-radius:14px;padding:18px;margin-bottom:18px}
+.tips-card h4{color:var(--telegram);margin-bottom:6px;font-size:14px}
+.tips-card p,.tips-card li{font-size:12px;color:var(--txt2);line-height:1.7}
+.tips-card ul{margin-top:6px;padding-left:14px}
+
+.section-title{font-size:20px;font-weight:800;margin-bottom:6px;margin-top:20px}
+.section-desc{font-size:13px;color:var(--txt2);margin-bottom:18px;line-height:1.6}
+
+.footer{text-align:center;padding:30px 20px;color:var(--txt2);font-size:11px;border-top:1px solid var(--border);margin-top:30px}
+.footer a{color:var(--telegram);text-decoration:none}
+
+@media(max-width:600px){
+  .hero{padding:35px 14px 25px}
+  .hero .ball{font-size:55px}
+  .team-name{font-size:11px}
+  .flag{font-size:18px}
+  .match-card{padding:12px 14px}
+  .stats{gap:18px}
+  .stat-n{font-size:20px}
+  .tg-float{bottom:15px;right:15px;padding:12px 20px;font-size:13px}
+  .tg-banner{margin:16px 12px;padding:20px}
+  .tg-banner h2{font-size:18px}
+  .tg-btn{font-size:14px;padding:12px 24px}
+}
+</style>
+</head>
+<body>
+
+<!-- Floating Telegram Button -->
+<a href="https://t.me/SuperBolaWC" target="_blank" class="tg-float">
+  <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 7.47l-1.97 9.28c-.15.67-.54.83-1.09.52l-3.02-2.22-1.46 1.4c-.16.16-.3.3-.61.3l.22-3.06 5.56-5.02c.24-.22-.05-.33-.37-.14L8.68 13.3l-2.97-.93c-.65-.2-.66-.65.14-.96l11.6-4.47c.54-.2 1.01.13.83.96l-.33-.43z"/></svg>
+  📢 Join SuperBolaWC
+</a>
+
+<div class="hero">
+  <span class="ball">⚽</span>
+  <div style="display:inline-block;background:linear-gradient(135deg,#0088cc,#0055aa);color:#fff;padding:6px 16px;border-radius:20px;font-size:13px;font-weight:700;margin-bottom:12px;letter-spacing:0.5px">📢 @SuperBolaWC — Channel Telegram #1</div>
+  <h1>FIFA World Cup 2026</h1>
+  <p class="sub">USA 🇺🇸 • Mexico 🇲🇽 • Canada 🇨🇦</p>
+  <div class="hosts">
+    <span class="host-badge">🇺🇸 Amerika Serikat</span>
+    <span class="host-badge">🇲🇽 Meksiko</span>
+    <span class="host-badge">🇨🇦 Kanada</span>
+  </div>
+</div>
+
+<!-- Telegram CTA Banner -->
+<div class="tg-banner">
+  <h2>📢 JOIN CHANNEL TELEGRAM KAMI!</h2>
+  <p>Dapetin jadwal pertandingan, prediksi jitu, link streaming, & diskusi bola seru setiap hari!</p>
+  <div class="tg-features">
+    <span class="tg-feat">⚽ Prediksi Jitu</span>
+    <span class="tg-feat">📺 Link Streaming</span>
+    <span class="tg-feat">🔔 Notifikasi Goal</span>
+    <span class="tg-feat">💬 Diskusi Bola</span>
+  </div>
+  <a href="https://t.me/SuperBolaWC" target="_blank" class="tg-btn">
+    <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 7.47l-1.97 9.28c-.15.67-.54.83-1.09.52l-3.02-2.22-1.46 1.4c-.16.16-.3.3-.61.3l.22-3.06 5.56-5.02c.24-.22-.05-.33-.37-.14L8.68 13.3l-2.97-.93c-.65-.2-.66-.65.14-.96l11.6-4.47c.54-.2 1.01.13.83.96l-.33-.43z"/></svg>
+    🚀 GABUNG SEKARANG — GRATIS!
+  </a>
+  <div class="tg-member-count">⚡ Channel baru — jadi yang pertama gabung & ramein!</div>
+</div>
+
+<div class="countdown" id="countdown">
+  <div class="cd-item"><div class="cd-n" id="cd-d">--</div><div class="cd-l">Hari</div></div>
+  <div class="cd-item"><div class="cd-n" id="cd-h">--</div><div class="cd-l">Jam</div></div>
+  <div class="cd-item"><div class="cd-n" id="cd-m">--</div><div class="cd-l">Menit</div></div>
+  <div class="cd-item"><div class="cd-n" id="cd-s">--</div><div class="cd-l">Detik</div></div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-n">48</div><div class="stat-l">Tim</div></div>
+  <div class="stat"><div class="stat-n">12</div><div class="stat-l">Grup</div></div>
+  <div class="stat"><div class="stat-n">80</div><div class="stat-l">Pertandingan</div></div>
+  <div class="stat"><div class="stat-n">16</div><div class="stat-l">Kota</div></div>
+</div>
+
+<div class="nav">
+  <a href="https://t.me/SuperBolaWC" target="_blank" style="background:linear-gradient(135deg,#0088cc,#0055aa);color:#fff;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:4px">📢 @SuperBolaWC</a>
+  <div class="nav-tab active" onclick="showSection('schedule')">📅 Jadwal</div>
+  <div class="nav-tab" onclick="showSection('streaming')">📺 Streaming</div>
+  <div class="nav-tab" onclick="showSection('info')">ℹ️ Info</div>
+</div>
+
+<div class="container">
+
+<!-- SCHEDULE -->
+<div class="section active" id="section-schedule">
+  <input type="text" class="search" placeholder="🔍 Cari tim... (Brazil, Argentina, dll)" id="searchInput" oninput="filterMatches()">
+  <div class="filter" id="filterBar">
+    <div class="f-btn active" onclick="filterPhase('all',this)">Semua</div>
+    <div class="f-btn" onclick="filterPhase('fase-grup',this)">🏆 Fase Grup</div>
+    <div class="f-btn" onclick="filterPhase('r32',this)">⚔️ R32</div>
+    <div class="f-btn" onclick="filterPhase('r16',this)">🔥 R16</div>
+    <div class="f-btn" onclick="filterPhase('qf',this)">💎 QF</div>
+    <div class="f-btn" onclick="filterPhase('sf',this)">🥇 SF</div>
+    <div class="f-btn" onclick="filterPhase('final',this)">🏆 Final</div>
+  </div>
+  
+  <div class="tips-card" style="text-align:center">
+    <h4>📺 Mau link streaming & prediksi setiap pertandingan?</h4>
+    <p>Gabung channel Telegram kami untuk dapetin link streaming + prediksi jitu sebelum match!</p>
+    <a href="https://t.me/SuperBolaWC" target="_blank" class="s-link" style="margin-top:10px;display:inline-flex">🚀 Gabung SuperBolaWC</a>
+  </div>
+  
+  <div id="matches-container">
+<div class="phase-header" data-phase="fase-grup"><h2>🏆 Fase Grup</h2></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Kamis, 11 Jun 2026</span><span class="match-count">2 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇲🇽</span><span class="team-name">Mexico</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">South Africa</span><span class="flag">🇿🇦</span></div></div><div class="match-venue">🏟️ Estadio Banorte</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 09:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇰🇷</span><span class="team-name">South Korea</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Czechia</span><span class="flag">🇨🇿</span></div></div><div class="match-venue">🏟️ Estadio Akron</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Jumat, 12 Jun 2026</span><span class="match-count">2 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇨🇦</span><span class="team-name">Canada</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Bosnia-Herzegovina</span><span class="flag">🇧🇦</span></div></div><div class="match-venue">🏟️ BMO Field</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 08:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇺🇸</span><span class="team-name">United States</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Paraguay</span><span class="flag">🇵🇾</span></div></div><div class="match-venue">🏟️ SoFi Stadium</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Sabtu, 13 Jun 2026</span><span class="match-count">3 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇶🇦</span><span class="team-name">Qatar</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Switzerland</span><span class="flag">🇨🇭</span></div></div><div class="match-venue">🏟️ Levi's Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 05:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇧🇷</span><span class="team-name">Brazil</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Morocco</span><span class="flag">🇲🇦</span></div></div><div class="match-venue">🏟️ MetLife Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 08:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇭🇹</span><span class="team-name">Haiti</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Scotland</span><span class="flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span></div></div><div class="match-venue">🏟️ Gillette Stadium</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Minggu, 14 Jun 2026</span><span class="match-count">5 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 11:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇦🇺</span><span class="team-name">Australia</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Türkiye</span><span class="flag">🇹🇷</span></div></div><div class="match-venue">🏟️ BC Place</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 00:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇩🇪</span><span class="team-name">Germany</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Curaçao</span><span class="flag">🇨🇼</span></div></div><div class="match-venue">🏟️ NRG Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 03:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇳🇱</span><span class="team-name">Netherlands</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Japan</span><span class="flag">🇯🇵</span></div></div><div class="match-venue">🏟️ AT&T Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 06:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇨🇮</span><span class="team-name">Ivory Coast</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Ecuador</span><span class="flag">🇪🇨</span></div></div><div class="match-venue">🏟️ Lincoln Financial Field</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 09:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇸🇪</span><span class="team-name">Sweden</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Tunisia</span><span class="flag">🇹🇳</span></div></div><div class="match-venue">🏟️ Estadio BBVA</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Senin, 15 Jun 2026</span><span class="match-count">4 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 23:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇪🇸</span><span class="team-name">Spain</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Cape Verde</span><span class="flag">🇨🇻</span></div></div><div class="match-venue">🏟️ Mercedes-Benz Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇧🇪</span><span class="team-name">Belgium</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Egypt</span><span class="flag">🇪🇬</span></div></div><div class="match-venue">🏟️ Lumen Field</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 05:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇸🇦</span><span class="team-name">Saudi Arabia</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Uruguay</span><span class="flag">🇺🇾</span></div></div><div class="match-venue">🏟️ Hard Rock Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 08:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇮🇷</span><span class="team-name">Iran</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">New Zealand</span><span class="flag">🇳🇿</span></div></div><div class="match-venue">🏟️ SoFi Stadium</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Selasa, 16 Jun 2026</span><span class="match-count">3 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇫🇷</span><span class="team-name">France</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Senegal</span><span class="flag">🇸🇳</span></div></div><div class="match-venue">🏟️ MetLife Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 05:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇮🇶</span><span class="team-name">Iraq</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Norway</span><span class="flag">🇳🇴</span></div></div><div class="match-venue">🏟️ Gillette Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 08:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇦🇷</span><span class="team-name">Argentina</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Algeria</span><span class="flag">🇩🇿</span></div></div><div class="match-venue">🏟️ GEHA Field at Arrowhead Stadium</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Rabu, 17 Jun 2026</span><span class="match-count">5 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 11:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇦🇹</span><span class="team-name">Austria</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Jordan</span><span class="flag">🇯🇴</span></div></div><div class="match-venue">🏟️ Levi's Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 00:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇵🇹</span><span class="team-name">Portugal</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Congo DR</span><span class="flag">🇨🇩</span></div></div><div class="match-venue">🏟️ NRG Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 03:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span><span class="team-name">England</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Croatia</span><span class="flag">🇭🇷</span></div></div><div class="match-venue">🏟️ AT&T Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 06:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇬🇭</span><span class="team-name">Ghana</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Panama</span><span class="flag">🇵🇦</span></div></div><div class="match-venue">🏟️ BMO Field</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 09:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇺🇿</span><span class="team-name">Uzbekistan</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Colombia</span><span class="flag">🇨🇴</span></div></div><div class="match-venue">🏟️ Estadio Banorte</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Kamis, 18 Jun 2026</span><span class="match-count">4 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 23:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇨🇿</span><span class="team-name">Czechia</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">South Africa</span><span class="flag">🇿🇦</span></div></div><div class="match-venue">🏟️ Mercedes-Benz Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇨🇭</span><span class="team-name">Switzerland</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Bosnia-Herzegovina</span><span class="flag">🇧🇦</span></div></div><div class="match-venue">🏟️ SoFi Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 05:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇨🇦</span><span class="team-name">Canada</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Qatar</span><span class="flag">🇶🇦</span></div></div><div class="match-venue">🏟️ BC Place</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 08:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇲🇽</span><span class="team-name">Mexico</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">South Korea</span><span class="flag">🇰🇷</span></div></div><div class="match-venue">🏟️ Estadio Akron</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Jumat, 19 Jun 2026</span><span class="match-count">4 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇺🇸</span><span class="team-name">United States</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Australia</span><span class="flag">🇦🇺</span></div></div><div class="match-venue">🏟️ Lumen Field</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 05:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span><span class="team-name">Scotland</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Morocco</span><span class="flag">🇲🇦</span></div></div><div class="match-venue">🏟️ Gillette Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 07:30 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇧🇷</span><span class="team-name">Brazil</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Haiti</span><span class="flag">🇭🇹</span></div></div><div class="match-venue">🏟️ Lincoln Financial Field</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 10:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇹🇷</span><span class="team-name">Türkiye</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Paraguay</span><span class="flag">🇵🇾</span></div></div><div class="match-venue">🏟️ Levi's Stadium</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Sabtu, 20 Jun 2026</span><span class="match-count">3 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 00:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇳🇱</span><span class="team-name">Netherlands</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Sweden</span><span class="flag">🇸🇪</span></div></div><div class="match-venue">🏟️ NRG Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 03:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇩🇪</span><span class="team-name">Germany</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Ivory Coast</span><span class="flag">🇨🇮</span></div></div><div class="match-venue">🏟️ BMO Field</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 07:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇪🇨</span><span class="team-name">Ecuador</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Curaçao</span><span class="flag">🇨🇼</span></div></div><div class="match-venue">🏟️ GEHA Field at Arrowhead Stadium</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Minggu, 21 Jun 2026</span><span class="match-count">5 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 11:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇹🇳</span><span class="team-name">Tunisia</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Japan</span><span class="flag">🇯🇵</span></div></div><div class="match-venue">🏟️ Estadio BBVA</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 23:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇪🇸</span><span class="team-name">Spain</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Saudi Arabia</span><span class="flag">🇸🇦</span></div></div><div class="match-venue">🏟️ Mercedes-Benz Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇧🇪</span><span class="team-name">Belgium</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Iran</span><span class="flag">🇮🇷</span></div></div><div class="match-venue">🏟️ SoFi Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 05:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇺🇾</span><span class="team-name">Uruguay</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Cape Verde</span><span class="flag">🇨🇻</span></div></div><div class="match-venue">🏟️ Hard Rock Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 08:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇳🇿</span><span class="team-name">New Zealand</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Egypt</span><span class="flag">🇪🇬</span></div></div><div class="match-venue">🏟️ BC Place</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Senin, 22 Jun 2026</span><span class="match-count">4 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 00:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇦🇷</span><span class="team-name">Argentina</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Austria</span><span class="flag">🇦🇹</span></div></div><div class="match-venue">🏟️ AT&T Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 04:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇫🇷</span><span class="team-name">France</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Iraq</span><span class="flag">🇮🇶</span></div></div><div class="match-venue">🏟️ Lincoln Financial Field</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 07:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇳🇴</span><span class="team-name">Norway</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Senegal</span><span class="flag">🇸🇳</span></div></div><div class="match-venue">🏟️ MetLife Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 10:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇯🇴</span><span class="team-name">Jordan</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Algeria</span><span class="flag">🇩🇿</span></div></div><div class="match-venue">🏟️ Levi's Stadium</div></div>
+<div class="date-header" data-phase="fase-grup"><span class="date-text">📅 Selasa, 23 Jun 2026</span><span class="match-count">4 pertandingan</span></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 00:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇵🇹</span><span class="team-name">Portugal</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Uzbekistan</span><span class="flag">🇺🇿</span></div></div><div class="match-venue">🏟️ NRG Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 03:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span><span class="team-name">England</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Ghana</span><span class="flag">🇬🇭</span></div></div><div class="match-venue">🏟️ Gillette Stadium</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 06:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇵🇦</span><span class="team-name">Panama</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Croatia</span><span class="flag">🇭🇷</span></div></div><div class="match-venue">🏟️ BMO Field</div></div>
+<div class="match-card" data-phase="fase-grup"><div class="match-time">⏰ 09:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">🇨🇴</span><span class="team-name">Colombia</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Congo DR</span><span class="flag">🇨🇩</span></div></div><div class="match-venue">🏟️ Estadio Akron</div></div>
+<div class="phase-header" data-phase="r32"><h2>⚔️ Round of 32</h2></div>
+<div class="date-header" data-phase="r32"><span class="date-text">📅 Minggu, 28 Jun 2026</span><span class="match-count">1 pertandingan</span></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group A 2nd Place</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Group B 2nd Place</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ SoFi Stadium</div></div>
+<div class="date-header" data-phase="r32"><span class="date-text">📅 Senin, 29 Jun 2026</span><span class="match-count">3 pertandingan</span></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 00:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group C Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Group F 2nd Place</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ NRG Stadium</div></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 03:30 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group E Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Third Place Group A/B/C/D/F</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Gillette Stadium</div></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 08:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group F Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Group C 2nd Place</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Estadio BBVA</div></div>
+<div class="date-header" data-phase="r32"><span class="date-text">📅 Selasa, 30 Jun 2026</span><span class="match-count">3 pertandingan</span></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 00:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group E 2nd Place</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Group I 2nd Place</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ AT&T Stadium</div></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 04:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group I Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Third Place Group C/D/F/G/H</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ MetLife Stadium</div></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 08:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group A Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Third Place Group C/E/F/H/I</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Estadio Banorte</div></div>
+<div class="date-header" data-phase="r32"><span class="date-text">📅 Rabu, 1 Jul 2026</span><span class="match-count">3 pertandingan</span></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 23:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group L Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Third Place Group E/H/I/J/K</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Mercedes-Benz Stadium</div></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 03:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group G Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Third Place Group A/E/H/I/J</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Lumen Field</div></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 07:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group D Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Third Place Group B/E/F/I/J</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Levi's Stadium</div></div>
+<div class="date-header" data-phase="r32"><span class="date-text">📅 Kamis, 2 Jul 2026</span><span class="match-count">3 pertandingan</span></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group H Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Group J 2nd Place</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ SoFi Stadium</div></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 06:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group K 2nd Place</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Group L 2nd Place</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ BMO Field</div></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 10:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group B Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Third Place Group E/F/G/I/J</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ BC Place</div></div>
+<div class="date-header" data-phase="r32"><span class="date-text">📅 Jumat, 3 Jul 2026</span><span class="match-count">3 pertandingan</span></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 01:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group D 2nd Place</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Group G 2nd Place</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ AT&T Stadium</div></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 05:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group J Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Group H 2nd Place</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Hard Rock Stadium</div></div>
+<div class="match-card" data-phase="r32"><div class="match-time">⏰ 08:30 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Group K Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Third Place Group D/E/I/J/L</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ GEHA Field at Arrowhead Stadium</div></div>
+<div class="phase-header" data-phase="r16"><h2>🔥 Round of 16</h2></div>
+<div class="date-header" data-phase="r16"><span class="date-text">📅 Sabtu, 4 Jul 2026</span><span class="match-count">2 pertandingan</span></div>
+<div class="match-card" data-phase="r16"><div class="match-time">⏰ 00:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 32 1 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 32 3 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ NRG Stadium</div></div>
+<div class="match-card" data-phase="r16"><div class="match-time">⏰ 04:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 32 2 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 32 5 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Lincoln Financial Field</div></div>
+<div class="date-header" data-phase="r16"><span class="date-text">📅 Minggu, 5 Jul 2026</span><span class="match-count">2 pertandingan</span></div>
+<div class="match-card" data-phase="r16"><div class="match-time">⏰ 03:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 32 4 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 32 6 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ MetLife Stadium</div></div>
+<div class="match-card" data-phase="r16"><div class="match-time">⏰ 07:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 32 7 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 32 8 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Estadio Banorte</div></div>
+<div class="date-header" data-phase="r16"><span class="date-text">📅 Senin, 6 Jul 2026</span><span class="match-count">2 pertandingan</span></div>
+<div class="match-card" data-phase="r16"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 32 11 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 32 12 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ AT&T Stadium</div></div>
+<div class="match-card" data-phase="r16"><div class="match-time">⏰ 07:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 32 9 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 32 10 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Lumen Field</div></div>
+<div class="date-header" data-phase="r16"><span class="date-text">📅 Selasa, 7 Jul 2026</span><span class="match-count">2 pertandingan</span></div>
+<div class="match-card" data-phase="r16"><div class="match-time">⏰ 23:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 32 14 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 32 16 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Mercedes-Benz Stadium</div></div>
+<div class="match-card" data-phase="r16"><div class="match-time">⏰ 03:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 32 13 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 32 15 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ BC Place</div></div>
+<div class="phase-header" data-phase="qf"><h2>💎 Perempat Final</h2></div>
+<div class="date-header" data-phase="qf"><span class="date-text">📅 Kamis, 9 Jul 2026</span><span class="match-count">1 pertandingan</span></div>
+<div class="match-card" data-phase="qf"><div class="match-time">⏰ 03:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 16 1 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 16 2 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Gillette Stadium</div></div>
+<div class="date-header" data-phase="qf"><span class="date-text">📅 Jumat, 10 Jul 2026</span><span class="match-count">1 pertandingan</span></div>
+<div class="match-card" data-phase="qf"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 16 5 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 16 6 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ SoFi Stadium</div></div>
+<div class="date-header" data-phase="qf"><span class="date-text">📅 Sabtu, 11 Jul 2026</span><span class="match-count">2 pertandingan</span></div>
+<div class="match-card" data-phase="qf"><div class="match-time">⏰ 04:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 16 3 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 16 4 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Hard Rock Stadium</div></div>
+<div class="match-card" data-phase="qf"><div class="match-time">⏰ 08:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Round of 16 7 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Round of 16 8 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ GEHA Field at Arrowhead Stadium</div></div>
+<div class="phase-header" data-phase="sf"><h2>🥇 Semifinal</h2></div>
+<div class="date-header" data-phase="sf"><span class="date-text">📅 Selasa, 14 Jul 2026</span><span class="match-count">1 pertandingan</span></div>
+<div class="match-card" data-phase="sf"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Quarterfinal 1 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Quarterfinal 2 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ AT&T Stadium</div></div>
+<div class="date-header" data-phase="sf"><span class="date-text">📅 Rabu, 15 Jul 2026</span><span class="match-count">1 pertandingan</span></div>
+<div class="match-card" data-phase="sf"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Quarterfinal 3 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Quarterfinal 4 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Mercedes-Benz Stadium</div></div>
+<div class="phase-header" data-phase="final"><h2>🏆 FINAL</h2></div>
+<div class="date-header" data-phase="final"><span class="date-text">📅 Sabtu, 18 Jul 2026</span><span class="match-count">1 pertandingan</span></div>
+<div class="match-card" data-phase="final"><div class="match-time">⏰ 04:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Semifinal 1 Loser</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Semifinal 2 Loser</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ Hard Rock Stadium</div></div>
+<div class="date-header" data-phase="final"><span class="date-text">📅 Minggu, 19 Jul 2026</span><span class="match-count">1 pertandingan</span></div>
+<div class="match-card" data-phase="final"><div class="match-time">⏰ 02:00 WIB</div><div class="match-teams"><div class="team home"><span class="flag">⚽</span><span class="team-name">Semifinal 1 Winner</span></div><div class="vs">VS</div><div class="team away"><span class="team-name">Semifinal 2 Winner</span><span class="flag">⚽</span></div></div><div class="match-venue">🏟️ MetLife Stadium</div></div>
+
+  </div>
+</div>
+
+<!-- STREAMING -->
+<div class="section" id="section-streaming">
+  <h2 class="section-title">📺 Live Streaming Resmi</h2>
+  <p class="section-desc">Link streaming resmi untuk nonton FIFA World Cup 2026.</p>
+  
+  <div class="tips-card" style="text-align:center">
+    <h4>🔔 Mau notifikasi sebelum match mulai?</h4>
+    <p>Gabung channel Telegram kami & aktifkan notifikasi biar gak ketinggalan!</p>
+    <a href="https://t.me/SuperBolaWC" target="_blank" class="s-link" style="margin-top:10px;display:inline-flex">📢 Gabung Sekarang</a>
+  </div>
+  
+  <div class="tips-card">
+    <h4>🏆 Hak Siar Resmi Indonesia</h4>
+    <p><strong>Emtek Group</strong> (SCTV, Indosiar, Moji, Vidio) adalah pemegang hak siar resmi Piala Dunia 2026 di Indonesia.</p>
+  </div>
+  
+  <div class="s-grid">
+    <div class="s-card">
+      <span class="badge free">GRATIS</span><span class="badge indo">INDONESIA</span><span class="badge live">LIVE</span>
+      <h3>📺 Vidio.com</h3>
+      <p>Platform streaming resmi Emtek. Semua pertandingan WC 2026 tersedia. Beberapa match gratis!</p>
+      <a href="https://www.vidio.com/categories/36-fifa-world-cup-2026" target="_blank" class="s-link s-link-gold">▶ Tonton di Vidio</a>
+    </div>
+    <div class="s-card">
+      <span class="badge free">GRATIS</span><span class="badge indo">TV NASIONAL</span><span class="badge live">LIVE</span>
+      <h3>📺 SCTV Live</h3>
+      <p>TV nasional Indonesia. Tayangan langsung Piala Dunia gratis tanpa berlangganan.</p>
+      <a href="https://www.vidio.com/live/206-sctv" target="_blank" class="s-link s-link-gold">▶ Tonton SCTV Live</a>
+    </div>
+    <div class="s-card">
+      <span class="badge free">GRATIS</span><span class="badge indo">TV NASIONAL</span><span class="badge live">LIVE</span>
+      <h3>📺 Indosiar Live</h3>
+      <p>TV nasional Indonesia. Tayangan langsung Piala Dunia bersama SCTV.</p>
+      <a href="https://www.vidio.com/live/8-indosiar" target="_blank" class="s-link s-link-gold">▶ Tonton Indosiar Live</a>
+    </div>
+    <div class="s-card">
+      <span class="badge free">GRATIS</span><span class="badge indo">TV NASIONAL</span><span class="badge live">LIVE</span>
+      <h3>📺 Moji TV</h3>
+      <p>TV nasional Indonesia dari Emtek. Menyiarkan beberapa pertandingan WC 2026.</p>
+      <a href="https://www.vidio.com/live/262-moji" target="_blank" class="s-link s-link-gold">▶ Tonton Moji Live</a>
+    </div>
+    <div class="s-card">
+      <span class="badge free">GRATIS</span>
+      <h3>🌍 FIFA+</h3>
+      <p>Platform streaming resmi FIFA. Highlights, replay, dan beberapa siaran langsung gratis.</p>
+      <a href="https://www.plus.fifa.com/en/" target="_blank" class="s-link s-link-gold">▶ Buka FIFA+</a>
+    </div>
+    <div class="s-card">
+      <span class="badge free">GRATIS</span><span class="badge indo">TV KABEL</span>
+      <h3>📡 TVDROP</h3>
+      <p>Kumpulan channel TV kabel gratis: SPOTV, Fox Sports, CBS Sports, dan banyak lagi!</p>
+      <a href="https://tv.drop.my.id" target="_blank" class="s-link s-link-gold">▶ Buka TVDROP</a>
+    </div>
+  </div>
+  
+  <!-- Another Telegram CTA -->
+  <div class="tg-banner" style="margin-top:24px">
+    <h2>⚽ Channel Bola Terbaik di Telegram!</h2>
+    <p>Prediksi jitu, link streaming, highlight gol, & diskusi seru sesama pecinta bola!</p>
+    <a href="https://t.me/SuperBolaWC" target="_blank" class="tg-btn">
+      <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 7.47l-1.97 9.28c-.15.67-.54.83-1.09.52l-3.02-2.22-1.46 1.4c-.16.16-.3.3-.61.3l.22-3.06 5.56-5.02c.24-.22-.05-.33-.37-.14L8.68 13.3l-2.97-.93c-.65-.2-.66-.65.14-.96l11.6-4.47c.54-.2 1.01.13.83.96l-.33-.43z"/></svg>
+      📢 Join SuperBolaWC
+    </a>
+  </div>
+</div>
+
+<!-- INFO -->
+<div class="section" id="section-info">
+  <h2 class="section-title">ℹ️ Tentang Piala Dunia 2026</h2>
+  <p class="section-desc">Piala Dunia FIFA 2026 — edisi ke-23, pertama kali pakai format 48 tim!</p>
+  
+  <div class="info-card">
+    <h3>📋 Format Turnamen</h3>
+    <p>
+      • <strong>48 tim</strong> dibagi <strong>12 grup</strong> (4 tim/grup)<br>
+      • <strong>2 terbaik</strong> dari tiap grup + <strong>8 peringkat 3 terbaik</strong> lolos<br>
+      • Total <strong>104 pertandingan</strong> dalam 39 hari
+    </p>
+  </div>
+  
+  <div class="info-card">
+    <h3>🏟️ 16 Kota Penyelenggara</h3>
+    <p>
+      🇺🇸 <strong>USA:</strong> New York, LA, Dallas, Houston, Atlanta, Philly, Seattle, SF, Boston, Miami, Kansas City<br>
+      🇲🇽 <strong>Mexico:</strong> Mexico City, Guadalajara, Monterrey<br>
+      🇨🇦 <strong>Canada:</strong> Toronto, Vancouver
+    </p>
+  </div>
+  
+  <div class="info-card">
+    <h3>📅 Tanggal Penting</h3>
+    <p>
+      • <strong>11 Jun:</strong> Opening Match<br>
+      • <strong>28 Jun-3 Jul:</strong> Round of 32<br>
+      • <strong>4-7 Jul:</strong> Round of 16<br>
+      • <strong>9-11 Jul:</strong> Perempat Final<br>
+      • <strong>14-15 Jul:</strong> Semifinal<br>
+      • <strong>19 Jul:</strong> 🏆 FINAL — MetLife Stadium, New York
+    </p>
+  </div>
+  
+  <div class="info-card">
+    <h3>📺 Hak Siar Resmi</h3>
+    <p>
+      🇮🇩 <strong>Indonesia:</strong> Emtek (SCTV, Indosiar, Moji, Vidio)<br>
+      🇺🇸 <strong>USA:</strong> Fox Sports, Telemundo<br>
+      🇬🇧 <strong>UK:</strong> BBC, ITV<br>
+      🇩🇪 <strong>Jerman:</strong> ARD, ZDF<br>
+      🇫🇷 <strong>Prancis:</strong> TF1, beIN Sports<br>
+      🇪🇸 <strong>Spanyol:</strong> RTVE<br>
+      🇮🇹 <strong>Italia:</strong> RAI<br>
+      🇯🇵 <strong>Jepang:</strong> NHK, Abema<br>
+      🇰🇷 <strong>Korea:</strong> KBS, MBC, SBS<br>
+      🇧🇷 <strong>Brasil:</strong> TV Globo, SporTV<br>
+      🇸🇦 <strong>Arab Saudi:</strong> SSC<br>
+      🇶🇦 <strong>Timteng:</strong> beIN Sports
+    </p>
+  </div>
+  
+  <div class="info-card">
+    <h3>⚽ Tim Unggulan</h3>
+    <p>
+      🇧🇷 Brazil • 🇦🇷 Argentina (Juara Bertahan) • 🇫🇷 Prancis • 🇪🇸 Spanyol • 🇩🇪 Jerman • 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inggris • 🇳🇱 Belanda • 🇵🇹 Portugal • 🇯🇵 Jepang • 🇲🇦 Maroko
+    </p>
+  </div>
+  
+  <!-- Final Telegram CTA -->
+  <div class="tg-banner" style="margin-top:20px">
+    <h2>🏆 Jangan Lewatin Serunya Piala Dunia 2026!</h2>
+    <p>Gabung <strong>SuperBolaWC</strong> sekarang & dapetin semua info terbaru tentang Piala Dunia 2026!</p>
+    <div class="tg-features">
+      <span class="tg-feat">⚽ Prediksi Jitu</span>
+      <span class="tg-feat">📺 Streaming</span>
+      <span class="tg-feat">🔔 Notifikasi</span>
+      <span class="tg-feat">💬 Diskusi</span>
+    </div>
+    <a href="https://t.me/SuperBolaWC" target="_blank" class="tg-btn">
+      <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 7.47l-1.97 9.28c-.15.67-.54.83-1.09.52l-3.02-2.22-1.46 1.4c-.16.16-.3.3-.61.3l.22-3.06 5.56-5.02c.24-.22-.05-.33-.37-.14L8.68 13.3l-2.97-.93c-.65-.2-.66-.65.14-.96l11.6-4.47c.54-.2 1.01.13.83.96l-.33-.43z"/></svg>
+      🚀 GABUNG SEKARANG — GRATIS!
+    </a>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>⚽ FIFA World Cup 2026 — USA 🇺🇸 Mexico 🇲🇽 Canada 🇨🇦</p>
+<p style="margin-top:8px;font-size:16px;font-weight:700;color:#f59e0b">📢 Channel Telegram: <a href="https://t.me/SuperBolaWC" target="_blank" style="color:#3b82f6;font-size:18px">@SuperBolaWC</a></p>
+  <p style="margin-top:6px;color:#94a3b8">Gabung sekarang buat prediksi jitu, link streaming & update Piala Dunia 2026!</p>
+  <p style="margin-top:4px">Data dari ESPN API • Dibuat dengan ❤️</p>
+  <p style="margin-top:4px">Semua waktu dalam WIB (UTC+7)</p>
+</div>
+
+<script>
+function showSection(n){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.getElementById('section-'+n).classList.add('active');event.target.classList.add('active');if(n==='schedule'){document.getElementById('searchInput').value='';filterMatches()}}
+function filterMatches(){const q=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.match-card').forEach(c=>{c.style.display=c.textContent.toLowerCase().includes(q)?'':'none'});if(q){document.querySelectorAll('.date-header,.phase-header').forEach(h=>h.style.display='none')}else{document.querySelectorAll('.date-header,.phase-header').forEach(h=>h.style.display='')}}
+function filterPhase(p,b){document.querySelectorAll('.f-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');if(p==='all'){document.querySelectorAll('.match-card,.date-header,.phase-header').forEach(e=>e.style.display='');return}document.querySelectorAll('.phase-header,.date-header,.match-card').forEach(el=>{if(el.dataset.phase===p)el.style.display='';else el.style.display='none'})}
+function updateCD(){const n=new Date(),t=new Date('2026-06-11T19:00:00Z');let d=t-n;if(d<=0){document.getElementById('cd-d').textContent='🔴';document.getElementById('cd-h').textContent='LIVE';document.getElementById('cd-m').textContent='NOW';document.getElementById('cd-s').textContent='⚽';return}document.getElementById('cd-d').textContent=Math.floor(d/864e5);document.getElementById('cd-h').textContent=String(Math.floor(d%864e5/36e5)).padStart(2,'0');document.getElementById('cd-m').textContent=String(Math.floor(d%36e5/6e4)).padStart(2,'0');document.getElementById('cd-s').textContent=String(Math.floor(d%6e4/1e3)).padStart(2,'0')}
+updateCD();setInterval(updateCD,1000);
+</script>
+</body>
+</html>
